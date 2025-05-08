@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varz Community</title>
+    <title>Varz Community - Settings</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../CSS/two.css">
-    <link rel="stylesheet" href="../CSS/loading.css">
+    <link rel="stylesheet" href="../../CSS/setting.css">
+    <link rel="stylesheet" href="../../CSS/loading.css">
 </head>
 <body>
     <div class="header">
@@ -20,18 +20,23 @@
                 <i class="fas fa-cog"></i>
                 <span class="community-name">Varz Community</span>
             </div>
-            <a href="#" class="menu-item" onclick="Setting()">
+            <a href="#" class="menu-item" id="settingsBtn">
                 <i class="fas fa-cog"></i>
                 <span>Settings</span>
             </a>
+            <a href="#" class="menu-item" id="settingsBtn" onclick="Home()">
+                <i class="fas fa-cog"></i>
+                <span>Home</span>
+            </a>
         </div>
     </div>
+    <div class="loading" id="loading"></div>
     
-    <div class="main-content">
-        <h1>Welcome to Our Platform</h1>
-        <p>This website is fully responsive and works on both mobile and desktop devices.</p>
+    <div class="main-content" id="mainContent">
+        <!-- Settings Page Content will be injected here by JavaScript -->
+        <div class="loading">Loading settings...</div>
     </div>
-    <div id="loading" class="loading"></div>
-    <script src="../script/mod.js"></script>
+
+    <script src="../../script/setting.js"></script>
 </body>
 </html>

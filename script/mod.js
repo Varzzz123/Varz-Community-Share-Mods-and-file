@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menuToggle');
-    const menuContent = document.getElementById('menuContent');
+    const loading = document.getElementById('loading');
     
     menuToggle.addEventListener('click', function(e) {
         e.stopPropagation();
@@ -21,3 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
         e.stopPropagation();
     });
 });
+
+function Setting() {
+    loading.style.display = "block";
+
+    setTimeout(() => {
+        window.open('../HTML/PROPER/setting.html');
+        loading.style.display = "none";
+    }, 1000);
+}
