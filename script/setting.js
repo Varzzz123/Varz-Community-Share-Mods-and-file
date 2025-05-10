@@ -112,20 +112,6 @@ settingsBtn.addEventListener('click', function(e) {
   menuContent.classList.remove('active');
 });
 
-profileBtn.addEventListener('click', function(e) {
-  e.preventDefault();
-  mainContent.innerHTML = '<h1>Profile Page</h1><p>User profile will be shown here.</p>';
-  menuToggle.classList.remove('active');
-  menuContent.classList.remove('active');
-});
-
-logoutBtn.addEventListener('click', function(e) {
-  e.preventDefault();
-  alert('Logout functionality would go here');
-  menuToggle.classList.remove('active');
-  menuContent.classList.remove('active');
-});
-
 function Home() {
   loading.style.display = "block";
 
