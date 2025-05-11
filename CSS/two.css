@@ -9,6 +9,7 @@ body {
     background-color: #f5f5f5;
     color: #333;
     min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
 }
 
 .header {
@@ -82,14 +83,60 @@ body {
     transition: background-color 0.2s;
 }
 
-.menu-item:hover {
-    background-color: #f0f0f0;
+
+
+.Dekstop {
+    width: 450px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 400px;
+    background-image: url("../asset/dekstop.png");
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    box-shadow: 0 4px 15px rgb(0, 0, 0, 0.1);
+    outline: none;
 }
 
-.main-content {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+.Dekstop:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.Dekstop:active {
+    transform: scale(0.95);
+}
+
+.android {
+    width: 450px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 400px;
+    background-image: url("../asset/android.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    box-shadow: 0 4px 15px rgb(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.android:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.android:active {
+    transform: scale(0.95);
 }
 
 @keyframes fadeIn {

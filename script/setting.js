@@ -1,4 +1,3 @@
-// Database simulation using localStorage
 const database = {
   getSettings: () => {
       const settings = localStorage.getItem('varzCommunitySettings');
@@ -15,7 +14,6 @@ const database = {
   }
 };
 
-// DOM Elements
 const menuToggle = document.getElementById('menuToggle');
 const menuContent = document.getElementById('menuContent');
 const mainContent = document.getElementById('mainContent');
@@ -23,14 +21,12 @@ const settingsBtn = document.getElementById('settingsBtn');
 const profileBtn = document.getElementById('profileBtn');
 const logoutBtn = document.getElementById('logoutBtn');
 
-// Toggle menu
 menuToggle.addEventListener('click', function(e) {
   e.stopPropagation();
   this.classList.toggle('active');
   menuContent.classList.toggle('active');
 });
 
-// Close menu when clicking outside
 document.addEventListener('click', function(event) {
   if (!menuContent.contains(event.target) && event.target !== menuToggle) {
       menuToggle.classList.remove('active');
@@ -38,7 +34,6 @@ document.addEventListener('click', function(event) {
   }
 });
 
-// Load settings page
 function loadSettingsPage() {
   const settings = database.getSettings();
   
@@ -85,8 +80,7 @@ function loadSettingsPage() {
   `;
   
   mainContent.innerHTML = settingsHTML;
-  
-  // Handle form submission
+
   document.getElementById('settingsForm')?.addEventListener('submit', function(e) {
       e.preventDefault();
       
@@ -104,7 +98,6 @@ function loadSettingsPage() {
   });
 }
 
-// Navigation
 settingsBtn.addEventListener('click', function(e) {
   e.preventDefault();
   loadSettingsPage();
@@ -121,5 +114,4 @@ function Home() {
   }, 1000);
 }
 
-// Load default page (settings)
 loadSettingsPage();
