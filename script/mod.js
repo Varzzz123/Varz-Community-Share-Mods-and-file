@@ -30,3 +30,21 @@ function Setting() {
         loading.style.display = "none";
     }, 1000);
 }
+
+function dekstopMod() {
+    loading.style.display = 'block';
+
+    setTimeout(() => {
+        window.open('../HTML/MOD/DEKSTOP/halamanMod.html');
+        loading.style.display = 'none';
+    }, 1000);
+}
+
+function androidMod() {
+    loading.style.display = 'block';
+
+    setTimeout(() => {
+        window.open('../HTML/MOD/ANDROID/halamanMod.html');
+        loading.style.display = 'none';
+    }, 1000);
+}
