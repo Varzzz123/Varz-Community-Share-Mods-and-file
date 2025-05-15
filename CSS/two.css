@@ -82,17 +82,32 @@ body {
 }
 
 
+/* Global Responsive Settings */
 @media (max-width: 768px) {
-    .header {
-        padding: 12px 15px;
+    .sampul {
+      flex-direction: column; /* Tumpuk vertikal */
+      padding: 50px 20px; /* Padding lebih kecil */
+      margin-bottom: 50px;
     }
-    
-    .logo {
-        font-size: 1.3rem;
+  
+    .sampul-android, 
+    .sampul-dekstop {
+      width: 100%;
+      max-width: 280px;
+      margin: 0 0 30px 0 !important;
     }
-    
-    .menu-content {
-        right: 15px;
-        min-width: 180px;
+  
+    .btn {
+      width: 150px;
+      height: 40px;
     }
-}
+  }
+
+@media (min-width: 769px) {
+    .sampul-android, 
+    .sampul-dekstop {
+      width: 300px;
+      height: 330px;
+      margin: 0 50px;
+    }
+  }
