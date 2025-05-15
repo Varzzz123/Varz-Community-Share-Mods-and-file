@@ -1,37 +1,40 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varz Community</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Varz Community || Mod Page</title>
     <link rel="stylesheet" href="../CSS/two.css">
     <link rel="stylesheet" href="../CSS/loading.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Underdog&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div class="logo">Varz Community</div>
-        <button class="menu-toggle" id="menuToggle">
-            <i class="fas fa-plus"></i>
+    <div class="comun">
+        <h2 class="name-comun">Varz Community</h2>
+        <button class="homeb" onclick="Home()">
+            <i class="fas fa-home"></i>
         </button>
-        
-        <div class="menu-content" id="menuContent">
-            <div class="community-header">
-                <i class="fas fa-cog"></i>
-                <span class="community-name">Varz Community</span>
-            </div>
-            <a href="#" class="menu-item" onclick="Setting()">
-                <i class="fas fa-cog"></i>
-                <span>Settings</span>
-            </a>
+    </div>
+    <div class="sampul">
+        <div class="sampul-android">
+            <h1>ANDROID</h1>
+            <i class="fas fa-mobile-alt logo"></i>
+            <p>Pilih device anda</p>
+            <button class="btn" onclick="andro()"></button>
+        </div>
+        <div class="sampul-dekstop">
+            <h1>DEKSTOP</h1>
+            <i class="fas fa-desktop logo"></i>
+            <P>Pilih device anda</P>
+            <button class="btn" onclick="dekstop()"></button>
         </div>
     </div>
-    
-    <div class="main-content">
-        <button class="Dekstop" onclick="dekstopMod()"></button>
-        <button class="android" onclick="androidMod()"></button>     
-    </div>
-    <div id="loading" class="loading"></div>
+    <div class="loading" id="loading"></div>
     <script src="../script/mod.js"></script>
 </body>
 </html>
