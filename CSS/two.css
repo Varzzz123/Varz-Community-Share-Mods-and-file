@@ -8,6 +8,7 @@ body {
     background-color: #f5f5f5;
     color: #333;
     min-height: 100vh;
+    background-color: #032547;
 }
 
 .comun {
@@ -39,9 +40,12 @@ body {
     background-image: url("../asset/background.png");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #032547;
     font-family: "Creepster", system-ui;;
     display: flex;
     width: 100%;
+    min-height: 400px;
     padding: 100px 100px;
     text-align: center;
     margin-bottom: 100px;
@@ -68,7 +72,8 @@ body {
 }
 
 .sampul-android, .sampul-dekstop {
-    width: 300px;
+    width: 80%;
+    max-width: 300px;
     height: 300px;
     margin-bottom: 20px;
 }
@@ -88,6 +93,7 @@ body {
     margin-top: 20px;
     border-radius: 25px;
     cursor: pointer;
+    border: none;
     transition: all 0.3s;
     background: none;
     color: white;
